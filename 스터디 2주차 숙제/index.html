@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="KO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스터디 실습</title>
+</head>
+
+<h1> 문제1 </h1>
+
+<body>
+    <p>
+        고객명 : <input type="text" name="name" size="30" maxlength="10">
+    </p>
+
+    <p>
+        전화번호 : <input type="text" name="phone number" size="30" maxlength="10">
+    </p>
+
+    <p>
+        E-mail : <input type="text" name="email" size="30" maxlength="10">
+    </p>
+
+    <p>
+        피자선택:
+        <select name="select_pizza">
+            <option value="">피자를 선택하세요</option>
+            <option value="">포테이토 피자</option>
+            <option value="">고르곤졸라 피자</option>
+            <option value="">하와이안 피자</option>
+        </select>
+    </p>
+
+    <form>
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <input type="radio" name="size" value="small" checked /> Small
+            <br>
+            <input type="radio" name="size" value="medium" /> Medium
+            <br>
+            <input type="radio" name="size" value="Large" /> Large
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <input type="checkbox" name="topping" value="bacon" checked /> 베이컨
+            <br>
+            <input type="checkbox" name="topping" value="cheese" /> 치즈
+            <br>
+            <input type="checkbox" name="topping" value="onion" /> 양파
+            <br>
+            <input type="checkbox" name="topping" value="mushroom" /> 버섯
+        </fieldset>
+    </form>
+
+    희망배송시간 : <input type="time" name="birthtime">
+    <br>
+    배송시 요청사항:
+    <textarea name="content" id="content" cols="30" rows="10">
+    </textarea>
+    <br>
+    <input type="submit" value="주문하기">
+
+    <h1> 문제2 </h1>
+    <form>
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <ol>
+                <li>
+                    고객명 : <input type="text" name="name" size="30" maxlength="10">
+
+                </li>
+                <br>
+                <li>
+
+                    전화번호 : <input type="text" name="phone number" size="30" maxlength="10">
+
+                </li>
+                <br>
+                <li>
+
+                    E-mail : <input type="text" name="email" size="30" placeholder="answer@naver.com"maxlength="10">
+
+                </li>
+                <br>
+                <li>
+                        지역:
+                        <select name="select_local">
+                            <option value="">부산</option>
+                            <option value="">서울</option>
+                            <option value="">부산</option>
+                            <option value="">대구</option>
+                        </select>
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li>
+                    상품명 : <input type="text" name="name" size="30" maxlength="10">
+
+                </li>
+                <br>
+                <li>
+
+                    납품수량 : <input type="integer" name="phone number" placeholder="최소100"size="30" maxlength="10">
+
+                </li>
+                <br>
+
+
+                <li><label>납품등급:</label> <input type="range" name="priority" id="priority" min="0" max="10" value="0">
+                </li>
+
+
+
+                <br>
+                <li>
+                    배송시 요청사항:
+                    <textarea name="content" id="content" cols="30" rows="10">
+                    </textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <input type="submit" value="send message">
+
+
+
+    </form>
+
+</html>
